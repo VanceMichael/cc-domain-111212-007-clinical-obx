@@ -12,6 +12,10 @@ def scenario():
     routes['GET /report'] = [response(fixtures['sample.hl7'],status=200)]
     routes['GET /correction'] = [response(fixtures['correction.hl7'],status=200)]
     routes['GET /alternate'] = [response(fixtures['alternate.hl7'],status=200)]
+    routes['GET /alternate-escape'] = [response(fixtures['alternate_escape.hl7'],status=200)]
+    routes['GET /subids'] = [response(fixtures['subids.hl7'],status=200)]
+    routes['GET /subid-cancel'] = [response(fixtures['subid_cancel.hl7'],status=200)]
+    routes['GET /edge-values'] = [response(fixtures['edge_values.hl7'],status=200)]
     return routes
 
 def main():
